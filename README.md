@@ -29,25 +29,21 @@ Deploying backends or full-stack apps to Render manually usually involves repeti
 
 ---
 
-## ⚡ Quick Start (Easy Setup)
+## ⚡ Quick Start (No Install Needed!)
 
-### Step 1: Install & Initialize
+### Step 1: Initialize in your project
 
-Run these two commands in your target project:
+Open a terminal in your project root and run:
 
 ```bash
-# 1. Install the package
-npm install -D @ars2k03/render-deploy
-
-# 2. Initialize configuration
-npx render-deploy init
+npx @ars2k03/render-deploy init
 ```
 
-> **✨ What `init` automatically does for you:**  
+> **✨ What `init` automatically does in 1 second:**  
 > 1. **Smart Auto-Clones** your existing `.env` variables into `.env.render` (zero manual copy-pasting!).
 > 2. Appends deployment credential placeholders at the bottom of your `.env`.
 > 3. Protects both `.env` and `.env.render` in `.gitignore`.
-> 4. Automatically configures `"deploy": "render-deploy"` in your `package.json` scripts.
+> 4. Automatically configures `"deploy": "npx @ars2k03/render-deploy"` in your `package.json` scripts.
 
 ---
 
@@ -103,7 +99,8 @@ That's it! Your code will sync to GitHub, production variables will update on Re
 
 ## ✨ Core Features
 
-- 🔄 **Smart Auto-Clone:** Automatically clones your existing `.env` variables into `.env.render` during installation—never re-type 20+ variables by hand.
+- ⚡ **Zero Installation Overhead:** Run anywhere instantly using `npx @ars2k03/render-deploy init`.
+- 🔄 **Smart Auto-Clone:** Automatically clones your existing `.env` variables into `.env.render`—never re-type 20+ variables by hand.
 - 🛑 **Zero-Waste Redundant Build Skip:** Intelligently checks Git commit status and performs a diff between `.env.render` and Render's live environment. If nothing changed, it instantly skips the deployment, saving build minutes.
 - 📦 **Automatic Git Sync:** Detects uncommitted changes, stages, commits with an auto-sync timestamp, and pushes cleanly to your active branch (`main`, `master`, or custom).
 - 🌐 **Dynamic Live URL Discovery:** Automatically fetches the live service domain directly from Render's API—no hardcoded URLs required.
@@ -131,17 +128,15 @@ All deployment configurations are stored at the bottom of your `.env` file:
 
 ## 💻 CLI Commands
 
-You can run the CLI via `npm scripts` or directly using `npx`:
-
 ```bash
+# Initialize any project in seconds
+npx @ars2k03/render-deploy init
+
 # Deploy your project
 npm run deploy
 
-# Alternatively, deploy via npx without scripts
+# Alternatively, deploy directly via npx
 npx @ars2k03/render-deploy
-
-# Re-initialize or repair environment templates
-npx @ars2k03/render-deploy init
 
 # Display CLI help
 npx @ars2k03/render-deploy --help
