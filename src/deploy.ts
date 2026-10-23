@@ -164,6 +164,7 @@ async function updateBuildConfig(config: DeployConfig): Promise<void> {
   await renderApi(`/services/${config.serviceId}`, config.renderApiKey, {
     method: 'PATCH',
     body: JSON.stringify({
+      autoDeploy: 'no',
       serviceDetails: {
         envSpecificDetails: {
           buildCommand: config.buildCommand,
