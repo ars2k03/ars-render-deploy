@@ -6,9 +6,12 @@
 *Automate Git synchronization, production environment management, and live deployment tracking with a single command.*
 
 [![npm version](https://img.shields.io/npm/v/@ars2k03/render-deploy.svg?color=cb3837&style=flat-square)](https://www.npmjs.com/package/@ars2k03/render-deploy)
+[![GitHub Repository](https://img.shields.io/badge/GitHub-ars--render--deploy-181717?style=flat-square&logo=github)](https://github.com/ars2k03/ars-render-deploy)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](LICENSE)
 [![Node >= 18](https://img.shields.io/badge/node-%3E%3D18-brightgreen.svg?style=flat-square)](https://nodejs.org)
 [![TypeScript](https://img.shields.io/badge/TypeScript-Ready-3178C6.svg?style=flat-square)](https://www.typescriptlang.org)
+
+**Repository:** [https://github.com/ars2k03/ars-render-deploy](https://github.com/ars2k03/ars-render-deploy)
 
 </div>
 

@@ -20,6 +20,14 @@
   "publishConfig": {
     "access": "public"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ars2k03/ars-render-deploy.git"
+  },
+  "homepage": "https://github.com/ars2k03/ars-render-deploy#readme",
+  "bugs": {
+    "url": "https://github.com/ars2k03/ars-render-deploy/issues"
+  },
   "keywords": [
     "render",
     "deploy",
