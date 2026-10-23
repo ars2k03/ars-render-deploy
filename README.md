@@ -29,22 +29,25 @@ Deploying backends or full-stack apps to Render manually usually involves repeti
 
 ---
 
-## ⚡ Quick Start (3 Easy Steps)
+## ⚡ Quick Start (Easy Setup)
 
-### Step 1: Install in your project
+### Step 1: Install & Initialize
 
-Run this in your target project root:
+Run these two commands in your target project:
 
 ```bash
+# 1. Install the package
 npm install -D @ars2k03/render-deploy
+
+# 2. Initialize configuration
+npx render-deploy init
 ```
 
-> **✨ Automatic Setup (Zero Extra Work):**  
-> On install, the package automatically:
-> 1. **Auto-Clones** your existing `.env` variables into a new `.env.render` file (no manual copy-pasting required!).
+> **✨ What `init` automatically does for you:**  
+> 1. **Smart Auto-Clones** your existing `.env` variables into `.env.render` (zero manual copy-pasting!).
 > 2. Appends deployment credential placeholders at the bottom of your `.env`.
 > 3. Protects both `.env` and `.env.render` in `.gitignore`.
-> 4. Adds `"deploy": "render-deploy"` to your `package.json` scripts.
+> 4. Automatically configures `"deploy": "render-deploy"` in your `package.json` scripts.
 
 ---
 

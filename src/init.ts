@@ -100,16 +100,14 @@ export async function runInit(targetDir = process.cwd()): Promise<void> {
     console.log('✓ .env already has all deployment tool keys');
   }
 
-  // 4. package.json script handling
+  // 4. package.json script handling (Always set "deploy": "render-deploy")
   if (fs.existsSync(pkgPath)) {
     try {
       const pkg = JSON.parse(fs.readFileSync(pkgPath, 'utf-8'));
       pkg.scripts = pkg.scripts || {};
-      if (!pkg.scripts.deploy) {
-        pkg.scripts.deploy = 'render-deploy';
-        fs.writeFileSync(pkgPath, JSON.stringify(pkg, null, 2) + '\n', 'utf-8');
-        console.log('✓ Added "deploy": "render-deploy" to package.json scripts');
-      }
+      pkg.scripts.deploy = 'render-deploy';
+      fs.writeFileSync(pkgPath, JSON.stringify(pkg, null, 2) + '\n', 'utf-8');
+      console.log('✓ Configured "deploy": "render-deploy" in package.json scripts');
     } catch {
       // ignore
     }
