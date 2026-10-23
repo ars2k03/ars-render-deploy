@@ -59,7 +59,6 @@ RENDER_SERVICE_ID=srv-yourRenderServiceId
 GITHUB_USER=yourGithubUsername
 GITHUB_TOKEN=ghp_yourGithubPersonalAccessToken
 GITHUB_REPO_NAME=your-repo-name
-BACKEND_DIR=.
 BUILD_COMMAND=npm install --include=dev && npx prisma generate && npm run build
 START_COMMAND=npm run start:prod
 ```
@@ -120,7 +119,6 @@ All deployment configurations are stored at the bottom of your `.env` file:
 | `GITHUB_USER` | **Yes** | GitHub username or organization | `yourname` |
 | `GITHUB_TOKEN` | **Yes** | GitHub Personal Access Token (repo scope) | `ghp_m8lz...` |
 | `GITHUB_REPO_NAME` | **Yes** | GitHub repository name | `my-backend` |
-| `BACKEND_DIR` | No | Subfolder path, or `.` if in repository root | `.` or `backend` |
 | `BUILD_COMMAND` | No | Build command executed by Render | `npm install && npm run build` |
 | `START_COMMAND` | No | Start command executed by Render | `npm run start:prod` |
 

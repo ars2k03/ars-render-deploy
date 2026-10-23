@@ -1,6 +1,6 @@
 {
   "name": "@ars2k03/render-deploy",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Smart 1-click cloud deploy to Render with auto git and env sync",
   "type": "module",
   "license": "MIT",

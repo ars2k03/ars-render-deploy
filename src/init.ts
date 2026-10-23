@@ -7,7 +7,6 @@ const DEPLOYMENT_TOOL_KEYS = [
   { key: 'GITHUB_USER', comment: 'Your GitHub username or organization', defaultValue: '' },
   { key: 'GITHUB_TOKEN', comment: 'GitHub Personal Access Token (repo scope)', defaultValue: '' },
   { key: 'GITHUB_REPO_NAME', comment: 'GitHub repository name', defaultValue: '' },
-  { key: 'BACKEND_DIR', comment: 'Subfolder path or "." if backend is in project root', defaultValue: '.' },
   { key: 'BUILD_COMMAND', comment: 'Build command executed on Render', defaultValue: 'npm install --include=dev && npx prisma generate && npm run build' },
   { key: 'START_COMMAND', comment: 'Start command executed on Render', defaultValue: 'npm run start:prod' },
 ];
